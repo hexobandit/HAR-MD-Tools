@@ -4,11 +4,9 @@ A collection of Python scripts for converting HAR files to Mermaid Markdown diag
 #### Why Use These Tools?
 - Simplify workflows: Convert HAR files or clean Markdown files in seconds.
 - Clean up busy Mermaid diagrams: Easy-to-read Mermaid diagrams and cleaned Markdown.
-- Single-tool option: Use the combined tool for all-in-one functionality.
 
-## Programs Overview
 
-### 1. har2md.py 📂🔍➡️📈
+# har2md.py 📂🔍➡️📈
 Converts a HAR file into a Mermaid sequenceDiagram for visualizing HTTP request flows
 
 #### Usage
@@ -30,7 +28,7 @@ This can however in some cases produce very busy diagrams. For example let's ana
 
 In the above screenshot, you can see communication going to fonts and google-analytics endpoints, which might not be relevant for our analysis. If that’s the case, we can simply delete all references that we don’t want in the final diagram. And that’s where the next program comes to save the day:
 
-### 2. mdLineCleaner.py ✂️📄🧹✅
+# mdLineCleaner.py ✂️📄🧹✅
 Cleans a Markdown file by removing lines that contain specific keywords. Saves the cleaned file and logs deleted lines.
 
 #### Usage
@@ -45,29 +43,6 @@ Example:
 If we take previous trackmytime.net example, by running ```python3 mdLineCleaner.py trackmytime.net.md fonts google``` we would get back much leaner results that would loook something like this:
 
 <img width="754" alt="image" src="https://github.com/user-attachments/assets/fb410b28-ce8f-4bb4-bcd4-2684715985b9" />
-
-Too much hassle? No worries — just use the all-in-one tool below
-
-### 3. har2md-n-mdLineCleaner.py 🦸🚀
-The ultimate tool — combines the functionality of both har2md.py and mdLineCleaner.py! 
-Use it for converting HAR files or cleaning Markdown.
-
-#### Usage
-Convert HAR to MD: 📂🔍➡️📈
-
-    python3 har2md-n-mdLineCleaner.py convert example.har
-
-Output: example.md
-
-#### Usage: 
-Clean Markdown: ✂️📄🧹✅
-
-    python3 har2md-n-mdLineCleaner.py clean example.md keyword1 keyword2
-
-Outputs:
-- example-cleaned.md
-- example-deleted.md
-
 
 
 ## 🧐 How to Obtain a .HAR File:
