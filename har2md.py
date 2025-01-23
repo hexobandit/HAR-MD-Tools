@@ -18,7 +18,7 @@ def har_to_mermaid(har_file):
         output_file = os.path.splitext(har_file)[0] + ".md"
 
         # Read the HAR file
-        with open(har_file, "r") as file:
+        with open(har_file, "r", encoding="utf-8") as file:
             har_data = json.load(file)
         
         # Extract entries from the HAR log

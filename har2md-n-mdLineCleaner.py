@@ -51,7 +51,7 @@ def har_to_mermaid(har_file):
         output_file = os.path.splitext(har_file)[0] + ".md"
 
         # Read the HAR file
-        with open(har_file, "r") as file:
+        with open(har_file, "r", encoding="utf-8") as file:
             har_data = json.load(file)
         
         # Extract entries from the HAR log
@@ -83,7 +83,7 @@ def har_to_mermaid(har_file):
             mermaid_diagram.append(f"{destination}-->>{source}: Response {status}")
                 
         # Write the Mermaid diagram to the output file
-        with open(output_file, "w") as out_file:
+        with open(output_file, "w", encoding="utf-8") as out_file:
             out_file.write("\n".join(mermaid_diagram))
         
         print(f"Mermaid sequenceDiagram saved to {output_file}")
