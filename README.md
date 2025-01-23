@@ -1,5 +1,5 @@
 # 🛠️ HAR and MD Tools 🛠️
-A collection of Python scripts for converting HAR files to Mermaid diagrams and cleaning up Markdown files. 
+A collection of Python scripts for converting HAR files to Mermaid Markdown diagrams and cleaning up busy Mermaid Markdown content.
 
 #### Why Use These Tools?
 - Simplify workflows: Convert HAR files or clean Markdown files in seconds.
@@ -52,7 +52,7 @@ Too much hassle? No worries — just use the all-in-one tool below
 The ultimate tool — combines the functionality of both har2md.py and mdLineCleaner.py! 
 Use it for converting HAR files or cleaning Markdown.
 
-#### Usage: 
+#### Usage
 Convert HAR to MD: 📂🔍➡️📈
 
     python3 har2md-n-mdLineCleaner.py convert example.har
